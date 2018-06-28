@@ -1,0 +1,21 @@
+1> As the files are in CSV format, we first convert them into simple ‘txt’ format, before passing them to the mapper.
+- For this we have created a ‘convert.py’ file.
+Challege:
+- One file contains almost 6 million rows, which cannot be directly loaded into a program such as python as a buffer. Hence we create an iterator, and go over the rows, one by one.
+
+2> DATA PREPROCESSING
+- A lot of rows have missing values, and other values such as N/A
+- We clean it using the equality check for ‘Not a Number (nan)’
+- We drop the rows, using our program that contains these values.
+- Then we drop columns/attributes which don’t put in too much signifance towards the other stats, such as flite number, although they represent a particular flite but having a number 6 or 7 does not mean, whether the flite will be on time.
+
+3> Mapper
+- Once we have the values, we generate key-value pairs from the mapper. We take in values such as,  actual time, crse time, arrival delay, day, year, month, and others.
+Now, we put a count on these, using ‘1’ for each record. This data once passed to reducer will be all averaged into a single record.
+
+4> Reducer
+- On receiving the values, we use the sorted data to merge/average the records for different days.
+Hence, we get 31 different records, which we output into the ‘data.txt’
+
+5> Distribution of values
+- After getting the reduced text, we plot different attributes to understand the trends, and the distribution of different parameters over the month.
