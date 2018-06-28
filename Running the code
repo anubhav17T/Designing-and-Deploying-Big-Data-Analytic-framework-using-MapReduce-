@@ -1,0 +1,13 @@
+First change to the current working directory in the terminal.
+
+Commands to be executed in order:
+
+1> python3 convert.py
+
+2> copy the file ‘2003.csv.txt’ and paste it in the current directory and rename to test.txt
+
+3> cat test.txt | ./mapper.py >> mapperout.txt
+
+4> ./sort.sh
+
+5> cat sorted.txt | ./reducer.py >> data.txt
