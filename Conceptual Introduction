@@ -1,0 +1,42 @@
+1.3.1 Concept of Python Convertor
+We have successfully designed a convertor application which converts the csv files
+in the text formats; it is very necessary and important to create a convertor for the
+datasets, as loading the csv files directly will result in crashing the programme.
+
+ Since, the data in python cannot be sent directly in buffer therefore, we create an
+iterator which will go over the rows, one by one.
+
+ A lot of rows have missing values, and other values such as N/A
+
+ We clean it using the equality check for ‘Not a Number (nan)’
+
+ We drop the rows, using our program that contains these values
+
+1.3.2 Concept of MapReduce Framework
+Hadoop MapReduce is a software framework for easily writing applications which
+process vast amounts of data (multi-terabyte data-sets) in-parallel on large clusters
+(thousands of nodes) of commodity hardware in a reliable, fault-tolerant manner. A
+MapReducejob usually splits the input data-set into independent chunks which are
+processed by themap tasks in a completely parallel manner. The framework sorts the
+outputs of the maps, which are then input to thereduce tasks. Typically both the input
+and the output of the job are stored in a file-system. The framework takes care of
+scheduling tasks, monitoring them and re-executes the failed tasks.
+Typically the compute nodes and the storage nodes are the same, that is, the MapReduce
+framework and the Hadoop Distributed File System (see HDFS Architecture Guide) are
+running on the same set of nodes.
+
+1.3.3 Concept Of Big Data
+
+Twentieth-century airplanes generated a lot of data — about the engine systems, fuel use,
+crew activity, and even weather systems they encountered. But airlines and airports had
+little to no capability to do much of anything with it, and most of the information could
+not even be transmitted in real time.
+Today, through thousands of sensors and sophisticated digitized systems, the newest
+generation of jets collects exponentially more, with each flight generating more than 30
+times the amount of data the previous generation of wide-bodied jets produced. While
+currently only about onetenth of the global fleet is made up of these technologically
+advanced aircraft, in a decademore than halfof it will be. By 2026, annual data
+generation should reach 98 billion gigabytes, or 98 million terabytes, according to a 2016
+estimate by Oliver Wyman. The newest generation aircraft by then will be spewing out
+between five and eight terabytes per flight, up to 80 times what older planes today
+generate.
